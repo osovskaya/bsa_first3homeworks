@@ -1,0 +1,15 @@
+{
+	"description": "BSA 16 - PHP - Modern PHP. Homework",
+	"name": "osovskaya/bsa",
+	"type": "project",
+	"license": "none",
+	"support": {
+		"source": "https://github.com/osovskaya/bsa"
+	},
+	"require": {
+		"php": ">=5.5"
+	},
+    "autoload": {
+        "classmap": ["Marvel/", "Greeting/", "Generator/"]
+        }
+}
