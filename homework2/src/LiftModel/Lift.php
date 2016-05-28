@@ -75,7 +75,7 @@ class Lift
      */
     public function loadPeople($people = 1)
     {
-        if (($this->peopleLoaded + $people) > $this->maxPeopleLoad * 2)
+        if ($people < 1 or ($this->peopleLoaded + $people) > $this->maxPeopleLoad * 2)
         {
             throw new \MyException('Overload');
         }
@@ -92,7 +92,7 @@ class Lift
      */
     public function unloadPeople($people = 1)
     {
-        if (($this->peopleLoaded - $people) < 0)
+        if ($people < 1 or ($this->peopleLoaded - $people) < 0)
         {
             throw new \MyException('Invalid number of people to unload');
         }
